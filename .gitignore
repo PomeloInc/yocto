@@ -1,0 +1,89 @@
+# Downloads & sstate-cache
+/downloads
+
+/board/*
+!/board/bbb/conf/*
+!/board/rpi/conf/*
+!/board/rpi4/conf/*
+
+# # Board Configs
+# rpi4
+/board/rpi4/cache
+/board/rpi4/sstate-cache
+/board/rpi4/tmp
+/board/rpi4/tmp-glibc
+# rpi
+/board/rpi/cache
+/board/rpi/sstate-cache
+/board/rpi/tmp
+/board/rpi/tmp-glibc
+# bbb minimal
+/board/bbb_pomelo_minimal/cache
+/board/bbb_pomelo_minimal/sstate-cache
+/board/bbb_pomelo_minimal/tmp
+/board/bbb_pomelo_minimal/tmp-glibc
+# bbb
+/board/bbb/cache
+/board/bbb/sstate-cache
+/board/bbb/tmp
+/board/bbb/tmp-glibc
+/board/bbb/conf/machine
+
+# Yocto Files
+bitbake-cookerdaemon.log
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+contrib/oe-stylize.py
+contrib/pw-am.sh
+contrib/tesseract-langs.sh
